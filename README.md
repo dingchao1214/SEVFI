@@ -35,9 +35,7 @@ Pretrained models and sample data can be downloaded via Google Drive.
 In our work, we conduct experiments on three real-world stereo event-intensity datasets:
 <br>
 - **DSEC** is a large-scale outdoor stereo event dataset especially for driving scenarios.
-<br>
 - **MVSEC** contains a single indoor scene and multi vehicle outdoor driving scenes. The events and frames are captured by two DAVIS346 cameras.
-<br>
 - **SEID** We build a stereo visual acquisition system containing an event camera and an RGB-D camera, and collect a new Stereo Event-Intensity Dataset. Our SEID captures dynamic scenes with complex motions and varying depths. (The data is coming soon.)
 
 ## Quick start
