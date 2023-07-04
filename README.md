@@ -1,7 +1,7 @@
 # Video Frame Interpolation with Stereo Event and Intensity Cameras
 
 The stereo event-intensity camera setup is widely applied to leverage the advantages of both event cameras with low latency and intensity cameras that capture accurate brightness and texture information. However, such a setup commonly encounters cross-modality parallax that is difficult to be eliminated solely with stereo rectification especially for real-world scenes with complex motions and varying depths, posing artifacts and distortion for existing Event-based Video Frame Interpolation (E-VFI) approaches. 
-To tackle this problem, we propose a novel Stereo Event-based VFI (SE-VFI) network to generate high-quality intermediate frames and corresponding disparities from misaligned inputs consisting of two consecutive keyframes and event streams emitted between them.
+To tackle this problem, we propose a novel Stereo Event-based VFI (SE-VFI) network (SEVFI-Net) to generate high-quality intermediate frames and corresponding disparities from misaligned inputs consisting of two consecutive keyframes and event streams emitted between them.
 Specifically, we propose a Feature Aggregation Module (FAM) to alleviate the parallax and achieve spatial alignment in the feature domain. We then exploit the fused features accomplishing accurate optical flow and disparity estimation, and achieving impressive interpolated results through flow-based and synthesis-based ways.
 We also build a stereo visual acquisition system composed of an event camera and an RGB-D camera to collect a new Stereo Event-Intensity Dataset (SEID) containing diverse scenes with complex motions and varying depths. 
 Experiments on public real-world stereo datasets, i.e., DSEC and MVSEC, and our SEID dataset demonstrate that our proposed network outperforms state-of-the-art methods by a large margin.
@@ -40,7 +40,7 @@ cd SEVFI
 pip install -r requirements.txt
 ```
 
-## Download model and data
+## Download models and data
 [Pretrained models](https://whueducn-my.sharepoint.com/:f:/g/personal/2017301200038_whu_edu_cn/En3TsJ6ZVntBmtxFDXVQYkEBk5HKYSrfhPOfZCWhlaFrEg?e=O9gSqs) and [sample data](https://whueducn-my.sharepoint.com/:f:/g/personal/2017301200038_whu_edu_cn/EmzCkEVHkW9DmULQuhxjWmQBZkOhARxto2VWvoBIzG4A7A?e=bPDSDe) can be downloaded via OneDrive.
 <br>
 In our work, we conduct experiments on three real-world stereo event-intensity datasets:
