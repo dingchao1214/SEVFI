@@ -42,10 +42,6 @@ In our work, we conduct experiments on three real-world stereo event-intensity d
 
 ## Quick start
 ### Initialization 
-- Change the parent directory.
-```buildoutcfg
-cd sevfi_code
-```
 - Copy the pretrined models to directory './PreTrained/'
 - Copy the sample data to directory './sample/dataset/'
 
