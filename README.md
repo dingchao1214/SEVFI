@@ -11,11 +11,10 @@ Experiments on public real-world stereo datasets, i.e., DSEC and MVSEC, and our 
     display: inline-block;
     color: #000;
     padding: 2px;">
-      Quantitative comparisons on Gev-RS dataset
   	</div>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="./figs/fig1.png" width = "75%" alt=""/>
+    src="./figs/fig1.png" width = "100%" alt=""/>
     <br>
 
 ## Environment setup
