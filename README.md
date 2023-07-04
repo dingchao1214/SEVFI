@@ -21,7 +21,7 @@ conda activaet sevfi
 ```
 Clone this repository.
 ```buildoutcfg
-git clone ...
+git clone git@github.com:dingchao1214/SEVFI.git
 ```
 Install the above dependencies.
 ```buildoutcfg
