@@ -6,6 +6,18 @@ Specifically, we propose a Feature Aggregation Module (FAM) to alleviate the par
 We also build a stereo visual acquisition system composed of an event camera and an RGB-D camera to collect a new Stereo Event-Intensity Dataset (SEID) containing diverse scenes with complex motions and varying depths. 
 Experiments on public real-world stereo datasets, i.e., DSEC and MVSEC, and our SEID dataset demonstrate that our proposed network outperforms state-of-the-art methods by a large margin.
 
+<center>
+<div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #000;
+    padding: 2px;">
+      Quantitative comparisons on Gev-RS dataset
+  	</div>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="./figs/fig1.png" width = "75%" alt=""/>
+    <br>
+
 ## Environment setup
 - python 3.7
 - Pytorch 1.9.1
