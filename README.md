@@ -19,7 +19,7 @@ Experiments on public real-world stereo datasets, i.e., DSEC and MVSEC, and our 
     </div>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="./figs/quantitative.png" width = "90%" alt=""/>
+    src="./figs/quantitative.png" width = "70%" alt=""/>
     <br>
 
 ## Environment setup
