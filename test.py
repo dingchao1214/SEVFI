@@ -41,6 +41,8 @@ def test_STFI(opt):
                                            num_insert=opt.num_insert)
         result_path = opt.save_path + opt.dataset + '/insert_' + str(opt.num_insert) + '/' + opt.test_list[i] + '/'
         utils.mkdir(result_path)
+        disp_path = opt.save_path + opt.dataset + '/disp_' + str(opt.num_insert) + '/' + opt.test_list[i] + '/'
+        utils.mkdir(disp_path)
         # testing
         print(opt.test_list[i])
         print('%d / %d' % (i+1, len(opt.test_list)))
@@ -75,6 +77,7 @@ def test_STFI(opt):
                                                                                          eframes_t1, iwe, weight)
                 final_t = torch.clamp(image_final, min=0, max=1)
                 output = final_t.reshape(B, N, 3, H, W) * 255.
+                output_disp = disp.reshape(B, N, 1, H, W)
 
                 # save interpolated images
                 save_image_0 = image_0[0, :].squeeze().permute(1, 2, 0).cpu().detach().numpy()
@@ -84,9 +87,14 @@ def test_STFI(opt):
                 name_1 = result_path + '{:05d}'.format(int((k + 1) * (opt.num_insert + 1))) + '.png'
                 cv2.imwrite(name_1, save_image_1)
                 for i in range(opt.num_insert):
+                    # save images
                     output_image = output[0, i, :].squeeze().permute(1, 2, 0).cpu().detach().numpy()
                     out_name = result_path + '{:05d}'.format(int(k * (opt.num_insert + 1) + i + 1)) + '.png'
                     cv2.imwrite(out_name, output_image)
+                    # save disparities
+                    out_disp = output_disp[0, i, :].squeeze().cpu().detach().numpy()
+                    disp_name = disp_path + '{:05d}'.format(int(k * (opt.num_insert + 1) + i + 1)) + '.png'
+                    cv2.imwrite(disp_name, out_disp)
         torch.cuda.empty_cache()
 
 
