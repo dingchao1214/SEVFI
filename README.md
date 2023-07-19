@@ -82,7 +82,7 @@ If you find our work useful in your research, please cite:
 ```buildoutcfg
 @article{ding2023video,
         title={Video Frame Interpolation with Stereo Event and Intensity Camera}, 
-        author={Ding, Chao and Lin, Mingyuan and Zhang, Haijian and Liu, Jianzhuang  and Yu, Lei},
+        author={Ding, Chao and Lin, Mingyuan and Zhang, Haijian and Liu, Jianzhuang and Yu, Lei},
         journal={arXiv preprint arXiv:2307.08228},
         year={2023}
         }
