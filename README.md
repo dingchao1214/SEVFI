@@ -80,10 +80,14 @@ python test.py --dataset MVSEC --model_path ./PreTrained/ --origin_path ./sample
 ## Citation
 If you find our work useful in your research, please cite:
 ```buildoutcfg
-@article{ding2023video,
-        title={Video Frame Interpolation with Stereo Event and Intensity Camera}, 
-        author={Ding, Chao and Lin, Mingyuan and Zhang, Haijian and Liu, Jianzhuang and Yu, Lei},
-        journal={arXiv preprint arXiv:2307.08228},
-        year={2023}
-        }
+@ARTICLE{10496813,
+  author={Ding, Chao and Lin, Mingyuan and Zhang, Haijian and Liu, Jianzhuang and Yu, Lei},
+  journal={IEEE Transactions on Multimedia}, 
+  title={Video Frame Interpolation with Stereo Event and Intensity Cameras}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-16},
+  keywords={Cameras;Interpolation;Brightness;Task analysis;Estimation;Convolution;Kernel;Stereo event-intensity camera;video frame interpolation;stereo matching;stereo event-intensity dataset},
+  doi={10.1109/TMM.2024.3387690}}
 ```
