@@ -30,7 +30,7 @@ You can create a new [Anaconda](https://www.anaconda.com/products/individual) en
 <br>
 ```buildoutcfg
 conda create -n sevfi python=3.7
-conda activaet sevfi
+conda activate sevfi
 ```
 Clone this repository.
 ```buildoutcfg
